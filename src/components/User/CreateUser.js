@@ -4,7 +4,7 @@ import Loader from '../Common/Loader';
 import './User.css';
 const CreateUser = () => {
     const navigate = useNavigate();
-    const createUserApi = "http://localhost:3000/user"
+    const createUserApi = "https://68db331d23ebc87faa323bd9.mockapi.io/user"
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const [user, setUser] = useState({
@@ -57,7 +57,7 @@ const CreateUser = () => {
             </div>
             <form onSubmit={handelSubmit}>
                 <div className="mb-3">
-                    <label for="name" className="form-label">Name</label>
+                    <label for="name" className="form-label">Name(*)</label>
                     <input type="text" className="form-control" id="name" name="name" value={user.name} onChange={handelInput} />
                 </div>
                 <div className="mb-3 mt-3">

@@ -5,7 +5,7 @@ import "./User.css";
 const EditUser = () => {
   const [user, setUser] = useState([]);
   const { id } = useParams();
-  const getUserApi = "http://localhost:3000/user";
+  const getUserApi = "https://68db331d23ebc87faa323bd9.mockapi.io/user";
 
   useEffect(() => {
     getUser();
